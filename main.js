@@ -28,7 +28,13 @@ document
 // Handle Google Fonts URL
 document.getElementById("addGoogleFont").addEventListener("click", () => {
   const urlInput = document.getElementById("googleFontUrl");
-  const url = urlInput.value.trim();
+  let url = urlInput.value.trim();
+
+  // Remove query parameters if present
+  if (url.includes("?")) {
+    url = url.split("?")[0];
+  }
+
   if (url && url.includes("fonts.google.com")) {
     // Extract font name from URL
     const fontName = url.split("/").pop().replace(/\+/g, " ");
