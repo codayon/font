@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Comparison Tool</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Font Comparison Tool</h1>
+      <p style="text-align: center; margin-bottom: 20px">
+        Upload .ttf font files or enter Google Fonts URLs to compare fonts.
+      </p>
+
+      <!-- Font Input Section -->
+      <div class="section">
+        <h2>Add Fonts</h2>
+        <div class="input-group">
+          <!-- TTF Upload -->
+          <div>
+            <label>Upload .ttf Font</label>
+            <input type="file" id="fontUpload" accept=".ttf" multiple />
+          </div>
+          <!-- Google Fonts URL -->
+          <div>
+            <label>Google Fonts URL</label>
+            <input
+              type="text"
+              id="googleFontUrl"
+              placeholder="e.g., https://fonts.google.com/specimen/Roboto" />
+            <button id="addGoogleFont" style="margin-top: 10px">
+              Add Google Font
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Font Comparison Section -->
+      <div class="section">
+        <h2>Font Comparison</h2>
+        <div id="fontList" class="font-list">
+          <p style="color: #666">
+            No fonts added yet. Upload a .ttf file or add a Google Fonts URL.
+          </p>
+        </div>
+        <div id="comparisonGrid" class="comparison-grid"></div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

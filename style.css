@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.input-group > div {
+  flex: 1;
+  min-width: 300px;
+}
+label {
+  display: block;
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 5px;
+}
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="file"] {
+  padding: 3px;
+}
+button {
+  padding: 8px 16px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.font-list {
+  margin-bottom: 15px;
+}
+.font-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.font-tag button {
+  background-color: #dc3545;
+  margin-left: 10px;
+  padding: 2px 8px;
+}
+.font-tag button:hover {
+  background-color: #b02a37;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.font-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.font-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.sample {
+  margin-bottom: 15px;
+}
+.sample-label {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 5px;
+}
+.sample-text {
+  margin: 0;
+}
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.subheading {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.body-text {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.small-text {
+  font-size: 0.8em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .input-group > div {
+    min-width: 100%;
+  }
+}
