@@ -1,6 +1,9 @@
 // Store loaded fonts
 const fonts = [];
 
+// Store user-typed text
+let userText = "";
+
 // Handle .ttf file upload
 document
   .getElementById("fontUpload")
@@ -55,6 +58,12 @@ document.getElementById("addGoogleFont").addEventListener("click", () => {
   } else {
     alert("Please enter a valid Google Fonts URL.");
   }
+});
+
+// Handle user-typed text input
+document.getElementById("userTextInput").addEventListener("input", (event) => {
+  userText = event.target.value;
+  updateComparison();
 });
 
 // Remove font
@@ -116,6 +125,15 @@ function updateComparison() {
       text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
+
+  // Add user-typed text sample if not empty
+  if (userText.trim() !== "") {
+    samples.push({
+      label: "Your Text",
+      class: "user-text",
+      text: userText,
+    });
+  }
 
   // Create comparison cards for each font
   fonts.forEach((font) => {

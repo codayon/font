@@ -28,6 +28,7 @@
             <input
               type="text"
               id="googleFontUrl"
+              placeholderaccumulative
               placeholder="e.g., https://fonts.google.com/specimen/Roboto" />
             <button id="addGoogleFont" style="margin-top: 10px">
               Add Google Font
@@ -39,6 +40,12 @@
       <!-- Font Comparison Section -->
       <div class="section">
         <h2>Font Comparison</h2>
+        <!-- User Text Input -->
+        <input
+          type="text"
+          id="userTextInput"
+          placeholder="Type your text to preview in fonts..."
+          style="width: 100%; padding: 8px; margin-bottom: 16px" />
         <div id="fontList" class="font-list">
           <p style="color: #666">
             No fonts added yet. Upload a .ttf file or add a Google Fonts URL.
