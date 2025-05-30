@@ -32,26 +32,6 @@ body:
       placeholder: Describe how you think this should work in OBK.
     validations:
       required: false
-  - type: input
-    id: linux-compatibility
-    attributes:
-      label: Operating System
-      description: Which Linux distribution and version are you using? (e.g., Ubuntu 24.04, Arch Linux)
-      placeholder: e.g., Ubuntu 24.04
-    validations:
-      required: true
-  - type: dropdown
-    id: input-method
-    attributes:
-      label: Input Method Framework
-      description: Which input method frameworks should this feature support?
-      multiple: true
-      options:
-        - IBus
-        - Fcitx
-        - Other (please specify in Additional Context)
-    validations:
-      required: true
   - type: textarea
     id: additional-context
     attributes:
