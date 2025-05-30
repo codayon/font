@@ -28,8 +28,8 @@ body:
     id: environment-details
     attributes:
       label: Environment Details
-      description: Which Linux destop environment and display type are you using? (e.g., GNOME Mutter Wayland, KDE Plasma X11, Hyprland)
-      placeholder: e.g., GNOME Mutter Wayland
+      description: Which Linux destop environment and display type are you using? (e.g., GNOME Wayland, Plasma X11, Hyprland)
+      placeholder: e.g., GNOME Wayland
     validations:
       required: true
   - type: dropdown
