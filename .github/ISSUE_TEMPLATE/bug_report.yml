@@ -12,8 +12,8 @@ body:
     id: obk-version
     attributes:
       label: OBK Version
-      description: What version of OpenBangla Keyboard are you using? (e.g., 2.1.0)
-      placeholder: e.g., 2.1.0
+      description: What version of OpenBangla Keyboard are you using? (e.g., 3.0.0)
+      placeholder: e.g., 3.0.0
     validations:
       required: true
   - type: input
@@ -24,12 +24,16 @@ body:
       placeholder: e.g., Ubuntu 24.04
     validations:
       required: true
-  - type: input
+  - type: dropdown
     id: input-method
     attributes:
       label: Input Method Framework
       description: Which input method framework are you using? (e.g., IBus, Fcitx)
-      placeholder: e.g., IBus
+      multiple: true
+      options:
+        - IBus
+        - Fcitx
+        - Other (please specify in Additional Context)
     validations:
       required: true
   - type: textarea

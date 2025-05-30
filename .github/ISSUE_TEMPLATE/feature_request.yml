@@ -32,18 +32,12 @@ body:
       placeholder: Describe how you think this should work in OBK.
     validations:
       required: false
-  - type: dropdown
+  - type: input
     id: linux-compatibility
     attributes:
-      label: Linux Compatibility
-      description: Which Linux environments should this feature support?
-      multiple: true
-      options:
-        - Ubuntu
-        - Fedora
-        - Arch Linux
-        - Debian
-        - Other (please specify in Additional Context)
+      label: Operating System
+      description: Which Linux distribution and version are you using? (e.g., Ubuntu 24.04, Arch Linux)
+      placeholder: e.g., Ubuntu 24.04
     validations:
       required: true
   - type: dropdown
